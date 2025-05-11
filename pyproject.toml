@@ -19,7 +19,7 @@
 # ==============================================================
 
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -51,20 +51,20 @@ classifiers = [
 ]
 
 dependencies = [
-    "numpy>=1.26.4,<2.0",
-    "opencv-python>=4.6.0",
-    "pyyaml>=5.3.1",
-    "tqdm>=4.64.0",
+    "numpy",
+    "opencv-python",
+    "pyyaml",
+    "tqdm",
 ]
 
 [project.optional-dependencies]
 extras = [
-    "matplotlib>=3.5.0"
+    "matplotlib"
 ]
 dev = [
-    "pytest>=7.0.0",
-    "ruff>=0.11.0",
-    "matplotlib>=3.5.0"
+    "pytest",
+    "ruff",
+    "matplotlib"
 ]
 
 [tool.setuptools] 
